@@ -1,0 +1,375 @@
+/* Base Styles ------------------------- */
+
+* {
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    /* color: #878787; */
+    margin: 0;
+    font: 1em / 1.5 'Helvetica Neue', Helvetica, sans-serif;
+    text-align: center;
+    background: url(../img/background.png) no-repeat fixed;
+    background-size: cover;
+}
+
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(34, 139, 34, 0.6);
+    width: 75%;
+    margin: 20px auto;
+    max-width: 960px;
+    z-index: 2;
+    /* position: -webkit-sticky; */
+}
+
+nav li {
+    display: inline-block;
+    margin: 15px;
+}
+
+nav a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color: white;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+    line-height: 1.3;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+    margin: 12px 0 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+img {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+section {
+    padding-bottom: 20px;
+}
+
+hr {
+    background-position: center;
+    border: 0;
+    height: 55px;
+    background-image: url(../img/horizontalRule.png);
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+img {
+    width: 60%;
+}
+
+footer {
+    background-color: rgba(34, 139, 34, 0.6);
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #e3e3e3;
+    max-width: 960px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: bold;
+}
+
+iframe {
+    margin: 50px;
+}
+
+/* Main Styles ------------------------- */
+.main-header,
+.main-footer {
+    text-align: center;
+}
+
+nav:hover {
+    background-color: #5c862e;
+}
+
+nav a:hover {
+    border-bottom: 2px solid;
+    padding-bottom: 5px;
+}
+
+.main-logo {
+    width: 15%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 10px;
+    margin-top: 30px;
+}
+
+.title {
+    font-size: 1.325rem;
+    letter-spacing: 0.065em;
+    font-weight: 200;
+    border-bottom: 2px solid;
+    padding-bottom: 10px;
+}
+
+.primary-content {
+    width: 75%;
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+a.anchor {
+    display: block;
+    position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
+.card-content {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+    max-width: 960px;
+}
+
+.article-footer:hover {
+    background-color: #5c862e;
+}
+
+.main-footer {
+    background-color: #5c862e;
+}
+
+/* Layout Styles ----------------------- */
+
+.card {
+    width: 46.5%;
+    margin-bottom: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow: 3px 5px 15px 3px rgba(0, 0, 0, 0.6);
+    background-color: white;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* Floated Columns ----------------------- */
+.sanft,
+.fliessend {
+    float: left;
+}
+
+.klassisch,
+.praevention {
+    float: right;
+}
+
+/* Float Clearfix ------------------------- */
+.group {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Tables --------------------------------- */
+table.minimalistBlack {
+    border: 3px solid #000000;
+    width: 50%;
+    margin-left: 25%;
+    text-align: left;
+    border-collapse: collapse;
+}
+table.minimalistBlack td,
+table.minimalistBlack th {
+    border: 1px solid #000000;
+    padding: 5px 4px;
+}
+
+table.minimalistBlack tr:nth-child(even) {
+    /* background: #a7f5b4; */
+    background-color: rgba(134, 207, 50, 0.521);
+}
+
+table.unstyledTable {
+    margin: 5%;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    border: 2px solid #000000;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+}
+table.unstyledTable td,
+table.unstyledTable th {
+    border: 2px solid #aaaaaa;
+    padding: 9px 5px;
+}
+table.unstyledTable tr:nth-child(even) {
+    /* background: rgba(192, 245, 201, 0.486); */
+    background-color: rgba(134, 207, 50, 0.521);
+}
+table.unstyledTable thead {
+    background: #dddddd;
+}
+table.unstyledTable thead th {
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+}
+
+/* Slideshow ---------------------------------*/
+/* Slideshow container */
+.slideshow-container {
+    max-width: 960px;
+    position: relative;
+    margin: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+/* Hide the images by default */
+.slideshow-container .mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.slideshow-container .prev,
+.slideshow-container .next {
+    /* left: 140px; */
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #666;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.slideshow-container .prev {
+    left: 10%;
+}
+
+/* Position the "next button" to the right */
+.slideshow-container .next {
+    right: 10%;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.slideshow-container .prev:hover,
+.slideshow-container .next:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.slideshow-container .dot {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    /* margin: 0 2px; */
+    background-color: #cfcfcf;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.slideshow-container .active,
+.slideshow-container .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.slideshow-container .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries ---------------------------------*/
+@media (max-width: 1080px) {
+    .klassisch,
+    .fliessend,
+    .sanft,
+    .praevention {
+        float: none;
+    }
+
+    .card {
+        margin: auto;
+        width: 80%;
+        height: 500px;
+    }
+
+    nav li {
+        display: block;
+    }
+
+    nav {
+        position: relative;
+    }
+}
